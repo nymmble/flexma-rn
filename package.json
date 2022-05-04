@@ -1,0 +1,42 @@
+{
+  "name": "flexma-rn",
+  "version": "0.1.0",
+  "description": "Layout component library for React Native to enable quick implementation of Figma designs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "pub": "npm version patch && publish --registry http://localhost:4873/",
+    "lint": "tslint --fix -p ./tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nymmble/flexma.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Figma",
+    "Flexbox",
+    "Flex",
+    "Autolayout"
+  ],
+  "author": "Nymmble",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nymmble/flexma/issues"
+  },
+  "homepage": "https://github.com/nymmble/flexma#readme",
+  "peerDependencies": {
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1",
+    "react-native": "~0.64.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
