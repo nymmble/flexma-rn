@@ -2,41 +2,49 @@
   "name": "flexma-rn",
   "version": "0.1.0",
   "description": "Layout component library for React Native to enable quick implementation of Figma designs",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "test": "jest"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "scripts": {
-    "build": "tsc --project ./tsconfig.json",
-    "pub": "npm version patch && publish --registry http://localhost:4873/",
-    "lint": "tslint --fix -p ./tsconfig.json",
-    "test": "jest"
-  },
+  "author": "nymmble inc.",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "figma",
+    "flexbox",
+    "flex",
+    "autolayout"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nymmble/flexma.git"
+    "url": "git+https://github.com/nymmble/flexma-rn.git"
   },
-  "keywords": [
-    "React",
-    "Native",
-    "Figma",
-    "Flexbox",
-    "Flex",
-    "Autolayout"
-  ],
-  "author": "Nymmble",
-  "license": "MIT",
+  "homepage": "https://github.com/nymmble/flexma-rn#readme",
   "bugs": {
-    "url": "https://github.com/nymmble/flexma/issues"
+    "url": "https://github.com/nymmble/flexma-rn/issues"
   },
-  "homepage": "https://github.com/nymmble/flexma#readme",
   "peerDependencies": {
-    "react": "~17.0.1",
-    "react-dom": "~17.0.1",
-    "react-native": "~0.64.3"
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^27.5.0",
+    "@types/react-test-renderer": "17.0.2",
+    "babel-jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "metro-react-native-babel-preset": "^0.71.1",
+    "react-test-renderer": "17.0.2",
     "typescript": "^4.6.4"
   }
 }
